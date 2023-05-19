@@ -1,9 +1,5 @@
 package com.pro.sky.hwlist;
 
-import org.springframework.stereotype.Service;
-
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
 
@@ -11,7 +7,7 @@ public class Employee {
     private String firstName;
     private String lastName;
 
-    public  Employee(String firstName, String lastName) {
+    public Employee(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }

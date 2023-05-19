@@ -18,7 +18,7 @@ public class RestController {
                               @RequestParam("lastName") String lastName) throws EmployeeNotFoundException {
 
         Servise.addEmployee(firstName, lastName);
-        return Servise.findEmployee(firstName,lastName);
+        return Servise.findEmployee(firstName, lastName);
     }
 
 
@@ -27,7 +27,7 @@ public class RestController {
                                  @RequestParam("lastName") String lastName) throws EmployeeNotFoundException {
 
         Servise.removeEmployee(firstName, lastName);
-        return Servise.findEmployee(firstName,lastName);
+        return Servise.findEmployee(firstName, lastName);
     }
 
     @GetMapping(path = "/find")
@@ -36,7 +36,7 @@ public class RestController {
 
         Servise.findEmployee(firstName, lastName);
 
-        return Servise.findEmployee(firstName,lastName);
+        return Servise.findEmployee(firstName, lastName);
     }
 }
 
